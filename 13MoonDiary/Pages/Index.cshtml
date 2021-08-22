@@ -12,15 +12,17 @@
 <div class="container-fluid">
     <div class="row no-gutters">
         @{
-            for (int i = 0; i < 7; i++)
+            var cards = IndexModel.WeekCardInfos;
+
+            foreach(var vcard in cards)
             {
                 <div class="col rounded no-gutters bordered">
                     <div class="card shadow-sm border-0">
-                        <img class="card-img-top" src="./img/2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="/img/@vcard.mainOracle.oracleImgSrc" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Just a card</h5>
+                            <p class="h6">@vcard.date.ToString("yyyy/MM/dd") (@vcard.weekDay)</p>                            
                             <p class="card-text text-muted">
-                                Some quick example text.
+                                @vcard.mainToen.toneName@vcard.mainOracle.oracleName @vcard.mainKIN
                             </p>
                             <a href="#" class="btn btn-info btn-round">Read More</a>
                         </div>
@@ -61,5 +63,34 @@
     </tbody>
 </table>
 
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Seq</th>
+            <th scope="col">English Name</th>
+            <th scope="col">Name</th>
+            <th scope="col">Picture(Thu)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var tones = IndexModel.MayanTones;
+            int tonesCount = tones.Count();
+
+            foreach (var tone in tones)
+            {
+                <tr>
+                    <td>@tone.id</td>
+                    <td>@tone.toneEName</td>
+                    <td>@tone.toneName</td>
+                    <td><img class="img-fluid" src="/img/@tone.toneImgSrc" width="30" height="30" /></td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
 
 
