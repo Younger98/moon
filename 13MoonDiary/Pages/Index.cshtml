@@ -1,0 +1,65 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">PH的瑪雅日記</h1>
+    <p>References from <a href="https://mayankin.com">Mayankin web site</a>.</p>
+</div>
+
+<div class="container-fluid">
+    <div class="row no-gutters">
+        @{
+            for (int i = 0; i < 7; i++)
+            {
+                <div class="col rounded no-gutters bordered">
+                    <div class="card shadow-sm border-0">
+                        <img class="card-img-top" src="./img/2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Just a card</h5>
+                            <p class="card-text text-muted">
+                                Some quick example text.
+                            </p>
+                            <a href="#" class="btn btn-info btn-round">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Seq</th>
+            <th scope="col">English Name</th>
+            <th scope="col">Name</th>
+            <th scope="col">Color</th>
+            <th scope="col">Picture(Thu)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var items = IndexModel.MayanOracles;
+            int itemCount = items.Count();
+
+            foreach (var item in items)
+            {
+                <tr>
+                    <td>@item.id</td>
+                    <td>@item.oracleEName</td>
+                    <td>@item.oracleName</td>
+                    <td>@item.oracleColor</td>
+                    <td><img class="img-fluid" src="/img/@item.oracleImgSrc" width="30" height="30" /></td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
+
+
+

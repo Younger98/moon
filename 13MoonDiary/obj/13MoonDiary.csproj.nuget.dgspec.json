@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/younger/Develop/13MoonDiary/13MoonDiary/13MoonDiary.csproj": {}
+  },
+  "projects": {
+    "/Users/younger/Develop/13MoonDiary/13MoonDiary/13MoonDiary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/younger/Develop/13MoonDiary/13MoonDiary/13MoonDiary.csproj",
+        "projectName": "13MoonDiary",
+        "projectPath": "/Users/younger/Develop/13MoonDiary/13MoonDiary/13MoonDiary.csproj",
+        "packagesPath": "/Users/younger/.nuget/packages/",
+        "outputPath": "/Users/younger/Develop/13MoonDiary/13MoonDiary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/younger/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

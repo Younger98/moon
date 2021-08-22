@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{1215DA3C-AD51-4D72-B7C3-529B1280D36E}|Default">
+  <MonoDevelop.Ide.ItemProperties.13MoonDiary PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="13MoonDiary/Pages/Index.cshtml">
+    <Files>
+      <File FileName="13MoonDiary/Pages/Index.cshtml" Line="72" Column="65" />
+      <File FileName="13MoonDiary/Pages/Index.cshtml.cs" />
+      <File FileName="13MoonDiary/wwwroot/css/site.css" />
+      <File FileName="13MoonDiary/Pages/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="13MoonDiary/Pages/Shared/_Layout.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="13MoonDiary" expanded="True">
+            <Node name="13MoonDiary" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Index.cshtml" expanded="True" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
